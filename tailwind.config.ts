@@ -56,6 +56,9 @@ const config: Config = {
         "3xl": "1710px",
         xs: "500px",
       },
+      borderRadius: {
+        50: "50px",
+      },
     },
   },
   plugins: [],
