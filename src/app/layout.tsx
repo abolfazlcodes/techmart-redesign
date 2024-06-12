@@ -1,8 +1,37 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
+
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const iranYekanX = localFont({
+  src: [
+    {
+      path: "../../public/fonts/iranYekanX/IRANYekanX-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/iranYekanX/IRANYekanX-ExtraBold.woff2",
+      weight: "800",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/iranYekanX/IRANYekanX-DemiBold.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/iranYekanX/IRANYekanX-Medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/iranYekanX/IRANYekanX-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +44,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" dir="rtl" className={iranYekanX.className}>
+      <body
+        className={`min-h-screen flex flex-col  relative overflow-x-hidden `}
+      >
+        {children}
+      </body>
     </html>
   );
 }

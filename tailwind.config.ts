@@ -44,9 +44,20 @@ const config: Config = {
         caption1: ["14px", "18.2px"],
         caption2: ["12px", "15.6px"],
       },
+      boxShadow: {
+        sm: "0px 1px 2px 0px #0000000D",
+        "": "0px 1px 2px 0px #0000000F,0px 1px 3px 0px #0000001A",
+        md: "0px 2px 4px -1px #0000000F,0px 4px 6px -1px #0000001A",
+        lg: "0px 4px 6px -2px #0000000D,0px 10px 15px -3px #0000001A",
+        xl: "0px 10px 10px -5px #0000000A,0px 20px 25px -5px #0000001A",
+        "2xl": " 0px 25px 50px -12px #00000040",
+      },
       screens: {
         "3xl": "1710px",
         xs: "500px",
+      },
+      borderRadius: {
+        50: "50px",
       },
     },
   },
