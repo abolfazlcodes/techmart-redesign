@@ -1,0 +1,26 @@
+.btn {
+  @apply bg-secondary px-6 inline-flex gap-x-2 items-center cursor-pointer no-underline select-none text-white;
+
+  & {
+    @apply py-2.5 rounded-xl;
+
+    @media (hover: hover) {
+      &:hover {
+        @apply bg-secondary-hover;
+      }
+    }
+  }
+
+  &-small {
+    @apply py-2.5 px-6 rounded-xl text-caption1;
+  }
+  &-medium {
+    @apply py-2.5 px-6 rounded-xl text-title2-m;
+  }
+  &-big {
+    @apply py-[13px] px-[22px] rounded-2xl text-title2-m;
+  }
+  &-full {
+    @apply w-full;
+  }
+}

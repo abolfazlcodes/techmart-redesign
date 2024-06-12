@@ -1,0 +1,43 @@
+@layer utilities {
+  .title1-d {
+    @apply text-title1-d font-extrabold;
+  }
+  .title1-m {
+    @apply text-title1-m font-extrabold;
+  }
+
+  .title2-d {
+    @apply text-title2-d font-semibold;
+  }
+  .title2-m {
+    @apply text-title2-m font-semibold;
+  }
+
+  .body1-d {
+    @apply text-body1-d font-normal;
+  }
+  .body1-m {
+    @apply text-body1-m font-normal;
+  }
+
+  .body2-d {
+    @apply text-body2-d font-normal;
+  }
+  .body2-m {
+    @apply text-body2-m font-normal;
+  }
+
+  .body3-d {
+    @apply text-body3-d font-normal;
+  }
+  .body3-m {
+    @apply text-body3-m font-normal;
+  }
+
+  .caption1 {
+    @apply text-caption1 font-medium;
+  }
+  .caption2 {
+    @apply text-caption2 font-medium;
+  }
+}
