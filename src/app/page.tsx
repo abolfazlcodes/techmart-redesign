@@ -15,6 +15,7 @@ import {
 import Tag from "./_components/Tag/Tag";
 import Link from "next/link";
 import EventCard from "./_components/EventCard/EventCards";
+import NewsCard from "./_components/NewsCard/NewsCard";
 
 export default function Home() {
   return (
@@ -52,9 +53,17 @@ export default function Home() {
         <NeedsCard />
       </div> */}
 
-      <div className="grid grid-cols-2 md:grid-rows-1 md:grid-cols-1 lg:grid-cols-2">
+      {/* <div className="grid grid-cols-2 md:grid-rows-1 md:grid-cols-1 lg:grid-cols-2">
         <EventCard />
         <EventCard />
+      </div> */}
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+        <NewsCard />
+        <NewsCard />
+        <NewsCard />
+        <NewsCard />
+        <NewsCard />
       </div>
     </main>
   );
