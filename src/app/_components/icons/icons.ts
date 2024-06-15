@@ -8,3 +8,4 @@ export { default as IconHeadset } from './src/headset';
 export { default as IconIconShop } from './src/icon-shop';
 export { default as IconLike } from './src/like';
 export { default as IconLocation } from './src/location';
+export { default as IconPhone } from './src/phone';
