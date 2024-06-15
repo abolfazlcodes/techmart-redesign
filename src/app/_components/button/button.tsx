@@ -3,16 +3,17 @@ import classNames from "classnames";
 import { Size } from "@/types/size.type";
 
 const variantClasses = {
-  normal: "btn-normal",
+  primary: "btn-primary",
+  ghost: "btn-ghost",
+  secondary: "btn-secondary",
 };
-
 const sizeClasses: Record<Size, string> = {
   small: "btn-small",
   medium: "btn-medium",
   big: "btn-big",
 };
 const Button: React.FC<ButtonProps> = ({
-  variant = "normal",
+  variant = "",
   isDisabled = false,
   isIcon = false,
   isLoading = false,
@@ -30,6 +31,7 @@ const Button: React.FC<ButtonProps> = ({
     { [`btn-${shape}`]: shape },
     { "animated-icon": isIcon },
     { "btn-loading pointer-events-none": isLoading },
+    // @ts-ignore
     { [`${variantClasses[variant]}`]: variant },
     { [`${sizeClasses[size]}`]: size }
   );

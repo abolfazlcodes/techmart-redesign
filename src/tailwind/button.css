@@ -1,5 +1,5 @@
 .btn {
-  @apply bg-secondary px-6 inline-flex gap-x-2 items-center cursor-pointer no-underline select-none text-white;
+  @apply bg-secondary px-6 inline-flex gap-x-2 items-center cursor-pointer no-underline select-none text-white transition-all duration-200 ease-linear;
 
   & {
     @apply py-2.5 rounded-xl;
@@ -9,6 +9,10 @@
         @apply bg-secondary-hover;
       }
     }
+  }
+
+  &-secondary {
+    @apply border border-primary bg-white text-primary hover:border-secondary hover:text-secondary hover:bg-white;
   }
 
   &-small {
