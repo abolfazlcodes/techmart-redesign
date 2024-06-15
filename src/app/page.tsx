@@ -7,6 +7,7 @@ import Image from "next/image";
 import {
   IconArrowLeft,
   IconArrowLeftLong,
+  IconArrowLeftOutlined,
   IconBuilding,
   IconClock,
   IconLocation,
@@ -16,6 +17,7 @@ import Tag from "./_components/Tag/Tag";
 import Link from "next/link";
 import EventCard from "./_components/EventCard/EventCards";
 import NewsCard from "./_components/NewsCard/NewsCard";
+import Header from "./_components/Header/Header";
 
 export default function Home() {
   return (
@@ -58,13 +60,15 @@ export default function Home() {
         <EventCard />
       </div> */}
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
         <NewsCard />
         <NewsCard />
         <NewsCard />
         <NewsCard />
         <NewsCard />
-      </div>
+      </div> */}
+
+      <Header />
     </main>
   );
 }
