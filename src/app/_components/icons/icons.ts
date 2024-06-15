@@ -1,5 +1,6 @@
 /* GENERATED FILE */
 
+export { default as IconArrowLeftLong } from './src/arrow-left-long';
 export { default as IconArrowLeftOutlined } from './src/arrow-left-outlined';
 export { default as IconArrowLeft } from './src/arrow-left';
 export { default as IconBuilding } from './src/building';
