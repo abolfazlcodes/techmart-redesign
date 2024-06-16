@@ -86,12 +86,14 @@ export default function Home() {
         <BrokerCard />
       </div> */}
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
         <CompanyCard />
         <CompanyCard />
         <CompanyCard />
         <CompanyCard />
-      </div>
+      </div> */}
+
+      <article></article>
     </main>
   );
 }
