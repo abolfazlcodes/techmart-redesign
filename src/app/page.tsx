@@ -20,6 +20,7 @@ import NewsCard from "./_components/NewsCard/NewsCard";
 import Header from "./_components/Header/Header";
 import AdBanner from "./_components/AdBanner/AdBanner";
 import BrokerCard from "./_components/BrokerCard/BrokerCard";
+import CompanyCard from "./_components/CompanyCard/CompanyCard";
 
 export default function Home() {
   return (
@@ -78,11 +79,18 @@ export default function Home() {
         buttonTitle="همین الان شروع کن"
       /> */}
 
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+        <BrokerCard />
+        <BrokerCard />
+        <BrokerCard />
+        <BrokerCard />
+      </div> */}
+
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
-        <BrokerCard />
-        <BrokerCard />
-        <BrokerCard />
-        <BrokerCard />
+        <CompanyCard />
+        <CompanyCard />
+        <CompanyCard />
+        <CompanyCard />
       </div>
     </main>
   );
