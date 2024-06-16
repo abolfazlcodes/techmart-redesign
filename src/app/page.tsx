@@ -18,6 +18,8 @@ import Link from "next/link";
 import EventCard from "./_components/EventCard/EventCards";
 import NewsCard from "./_components/NewsCard/NewsCard";
 import Header from "./_components/Header/Header";
+import AdBanner from "./_components/AdBanner/AdBanner";
+import BrokerCard from "./_components/BrokerCard/BrokerCard";
 
 export default function Home() {
   return (
@@ -68,7 +70,20 @@ export default function Home() {
         <NewsCard />
       </div> */}
 
-      <Header />
+      {/* <Header /> */}
+
+      {/* <AdBanner
+        title="اگر صاحب کالا یا برندی هستید ،"
+        caption="همین حالا محصول خود را ثبت کنید."
+        buttonTitle="همین الان شروع کن"
+      /> */}
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
+        <BrokerCard />
+        <BrokerCard />
+        <BrokerCard />
+        <BrokerCard />
+      </div>
     </main>
   );
 }
