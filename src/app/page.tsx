@@ -10,8 +10,10 @@ import {
   IconArrowLeftOutlined,
   IconBuilding,
   IconClock,
+  IconHeart,
   IconLocation,
   IconPhone,
+  IconShare,
 } from "./_components/icons/icons";
 import Tag from "./_components/Tag/Tag";
 import Link from "next/link";
@@ -21,6 +23,8 @@ import Header from "./_components/Header/Header";
 import AdBanner from "./_components/AdBanner/AdBanner";
 import BrokerCard from "./_components/BrokerCard/BrokerCard";
 import CompanyCard from "./_components/CompanyCard/CompanyCard";
+import InfoCardWrapper from "./_components/InfoCardWrapper/InfoCardWrapper";
+import NeedInfoCard from "./_components/NeedInfoCard/NeedInfoCard";
 
 export default function Home() {
   return (
@@ -31,7 +35,6 @@ export default function Home() {
         <CardOne />
         <CardOne />
       </div> */}
-
       {/* <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
         <TechFieldCard />
         <TechFieldCard />
@@ -46,23 +49,19 @@ export default function Home() {
         <TechFieldCard />
         <TechFieldCard />
       </div> */}
-
       {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         <ProductCard />
         <ProductCard />
         <ProductCard />
         <ProductCard />
       </div> */}
-
       {/* <div>
         <NeedsCard />
       </div> */}
-
       {/* <div className="grid grid-cols-2 md:grid-rows-1 md:grid-cols-1 lg:grid-cols-2">
         <EventCard />
         <EventCard />
       </div> */}
-
       {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
         <NewsCard />
         <NewsCard />
@@ -70,22 +69,18 @@ export default function Home() {
         <NewsCard />
         <NewsCard />
       </div> */}
-
       {/* <Header /> */}
-
       {/* <AdBanner
         title="اگر صاحب کالا یا برندی هستید ،"
         caption="همین حالا محصول خود را ثبت کنید."
         buttonTitle="همین الان شروع کن"
       /> */}
-
       {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
         <BrokerCard />
         <BrokerCard />
         <BrokerCard />
         <BrokerCard />
       </div> */}
-
       {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8">
         <CompanyCard />
         <CompanyCard />
@@ -93,7 +88,8 @@ export default function Home() {
         <CompanyCard />
       </div> */}
 
-      <article></article>
+      {/* Single Need Page Info Card */}
+      <NeedInfoCard />
     </main>
   );
 }
