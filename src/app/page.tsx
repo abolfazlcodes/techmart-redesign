@@ -28,7 +28,10 @@ import BrokerCard from "./_components/BrokerCard/BrokerCard";
 import CompanyCard from "./_components/CompanyCard/CompanyCard";
 import InfoCardWrapper from "./_components/InfoCardWrapper/InfoCardWrapper";
 import NeedInfoCard from "./_components/NeedInfoCard/NeedInfoCard";
+import ProductInfoCard from "./_components/ProductInfoCard/ProductInfoCard";
+import QrCode from "./_components/QrCode/QrCode";
 import BrokerInfoCard from "./_components/BrokerInfoCard/BrokerInfoCard";
+import CompanyInfoCard from "./_components/CompanyInfoCard/CompanyInfoCard";
 
 export default function Home() {
   return (
@@ -95,8 +98,14 @@ export default function Home() {
       {/* Single Need Page Info Card */}
       {/* <NeedInfoCard /> */}
 
+      {/* Single Product Page Info Card */}
+      {/* <ProductInfoCard /> */}
+
       {/* Single Broker Page Info Card */}
-      <BrokerInfoCard />
+      {/* <BrokerInfoCard /> */}
+
+      {/* Single Company Page Info Card */}
+      <CompanyInfoCard />
     </main>
   );
 }

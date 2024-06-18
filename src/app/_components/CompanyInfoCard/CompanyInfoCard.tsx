@@ -1,20 +1,42 @@
-import Button from "../button/button";
-import { IconClock, IconHeart, IconShare } from "../icons/icons";
+import Image from "next/image";
 import InfoCardWrapper from "../InfoCardWrapper/InfoCardWrapper";
 import QrCode from "../QrCode/QrCode";
+import { IconHeart, IconShare, IconWarning } from "../icons/icons";
+import Button from "../button/button";
 
-const BrokerInfoCard = () => {
+const CompanyInfoCard = () => {
   return (
     <InfoCardWrapper>
-      <div className="px-[21px] py-11 space-y-6">
+      <div className="py-[53px] px-[21px] space-y-6">
         <QrCode QrCodeImage="/images/QrCode.png" />
 
-        <div className="flex items-center gap-1">
-          <IconClock viewBox="0 0 24 24" className="w-6 h-6 stroke-icon" />
-          <span className="text-primary text-caption2">
-            اعتبار گواهی:{" "}
-            <span className="text-caption1 font-bold">1404/02/25</span>
-          </span>
+        <div className="bg-background py-1 rounded-lg px-4 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <Image
+              src={"/images/broker-card-info.png"}
+              alt=""
+              width={42}
+              height={42}
+            />
+            <span className="text-caption1 text-gray-8">دارنده فن بنیان</span>
+          </div>
+
+          <div>
+            <IconWarning
+              viewBox="0 0 24 24"
+              className="w-6 h-6 fill-secondary stroke-none"
+            />
+          </div>
+        </div>
+
+        <div className="space-y-3">
+          <p className="text-primary text-caption2">
+            وبسایت محصول:
+            <span className="text-primary text-caption1 font-bold">
+              {" "}
+              shanaatr.com
+            </span>
+          </p>
         </div>
 
         <div className="flex items-center justify-between gap-4">
@@ -47,11 +69,11 @@ const BrokerInfoCard = () => {
         </div>
 
         <Button className="w-full flex items-center justify-center font-bold text-base">
-          ارتباط با کارگزاری
+          ارتباط با شرکت
         </Button>
       </div>
     </InfoCardWrapper>
   );
 };
 
-export default BrokerInfoCard;
+export default CompanyInfoCard;
