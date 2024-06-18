@@ -13,6 +13,7 @@ export { default as IconLike } from './src/like';
 export { default as IconLocation } from './src/location';
 export { default as IconMessage } from './src/message';
 export { default as IconPhone } from './src/phone';
+export { default as IconSearchFill } from './src/search-fill';
 export { default as IconShare } from './src/share';
 export { default as IconStar } from './src/star';
 export { default as IconTick } from './src/tick';
