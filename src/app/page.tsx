@@ -29,6 +29,8 @@ import CompanyCard from "./_components/CompanyCard/CompanyCard";
 import InfoCardWrapper from "./_components/InfoCardWrapper/InfoCardWrapper";
 import NeedInfoCard from "./_components/NeedInfoCard/NeedInfoCard";
 import ProductInfoCard from "./_components/ProductInfoCard/ProductInfoCard";
+import QrCode from "./_components/QrCode/QrCode";
+import BrokerInfoCard from "./_components/BrokerInfoCard/BrokerInfoCard";
 
 export default function Home() {
   return (
@@ -99,57 +101,7 @@ export default function Home() {
       {/* <ProductInfoCard /> */}
 
       {/* Single Broker Page Info Card */}
-      <InfoCardWrapper>
-        <div className="px-[21px] py-11 space-y-6">
-          <article className="max-h-[205px] h-full bg-background flex items-center justify-center flex-col py-2 gap-y-3 rounded-2xl">
-            <Image src={"/images/QrCode.png"} alt="" width={155} height={155} />
-            <span className="font-bold text-caption1 leading-7 text-primary">
-              تصویر بالا را با گوشی همراه اسکن نمایید
-            </span>
-          </article>
-
-          <div className="flex items-center gap-1">
-            <IconClock viewBox="0 0 24 24" className="w-6 h-6 stroke-icon" />
-            <span className="text-primary text-caption2">
-              اعتبار گواهی:{" "}
-              <span className="text-caption1 font-bold">1404/02/25</span>
-            </span>
-          </div>
-
-          <div className="flex items-center justify-between gap-4">
-            <Button
-              variant="secondary"
-              isIcon={true}
-              className="group text-caption1 text-primary"
-              icon={
-                <IconHeart
-                  viewBox="0 0 24 24"
-                  className="stroke-primary group-hover:stroke-secondary duration-200 ease-linear w-5 h-5 -order-1"
-                />
-              }
-            >
-              <span className="order-2">علاقمندی</span>
-            </Button>
-            <Button
-              variant="secondary"
-              isIcon={true}
-              className="group text-caption1 text-primary"
-              icon={
-                <IconShare
-                  viewBox="0 0 24 24"
-                  className="stroke-primary group-hover:stroke-secondary duration-200 ease-linear w-5 h-5 -order-1"
-                />
-              }
-            >
-              <span className="order-2">اشتراک گذاری</span>
-            </Button>
-          </div>
-
-          <Button className="w-full flex items-center justify-center font-bold text-base">
-            ارتباط با کارگزاری
-          </Button>
-        </div>
-      </InfoCardWrapper>
+      <BrokerInfoCard />
     </main>
   );
 }
