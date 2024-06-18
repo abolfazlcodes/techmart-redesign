@@ -105,7 +105,11 @@ export default function Home() {
       {/* <BrokerInfoCard /> */}
 
       {/* Single Company Page Info Card */}
-      <CompanyInfoCard />
+      {/* <CompanyInfoCard /> */}
+
+      <article className="bg-primary max-w-[1600px] mx-auto rounded-[64px] pt-[38px] pb-[43px] px-[137px]">
+        <div className=""></div>
+      </article>
     </main>
   );
 }
