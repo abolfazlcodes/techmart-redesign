@@ -10,7 +10,7 @@ import {
 } from "../icons/icons";
 import InfoCardWrapper from "../InfoCardWrapper/InfoCardWrapper";
 
-const BrokerInfoCard = () => {
+const ProductInfoCard = () => {
   return (
     <InfoCardWrapper>
       <div className="space-y-6 pr-[21px] pl-[34px] py-[26px]">
@@ -116,4 +116,4 @@ const BrokerInfoCard = () => {
   );
 };
 
-export default BrokerInfoCard;
+export default ProductInfoCard;
