@@ -10,7 +10,7 @@ const NeedInfoCard = () => {
           <IconClock viewBox="0 0 24 24" className="w-5 h-5 stroke-icon" />
           <span className="text-primary text-caption2">
             تاریخ اعتبار:
-            <span className="text-primary text-caption2 font-bold">
+            <span className="text-primary text-caption1 font-bold">
               {" "}
               1404/02/25
             </span>
@@ -46,7 +46,7 @@ const NeedInfoCard = () => {
           </Button>
         </div>
 
-        <Button className="w-full flex items-center justify-center">
+        <Button className="w-full flex items-center justify-center font-bold text-base">
           ارتباط با تقاضا کننده
         </Button>
       </div>

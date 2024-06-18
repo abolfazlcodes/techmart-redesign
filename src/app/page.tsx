@@ -12,8 +12,11 @@ import {
   IconClock,
   IconHeart,
   IconLocation,
+  IconMessage,
   IconPhone,
   IconShare,
+  IconStar,
+  IconWarning,
 } from "./_components/icons/icons";
 import Tag from "./_components/Tag/Tag";
 import Link from "next/link";
@@ -25,6 +28,7 @@ import BrokerCard from "./_components/BrokerCard/BrokerCard";
 import CompanyCard from "./_components/CompanyCard/CompanyCard";
 import InfoCardWrapper from "./_components/InfoCardWrapper/InfoCardWrapper";
 import NeedInfoCard from "./_components/NeedInfoCard/NeedInfoCard";
+import BrokerInfoCard from "./_components/BrokerInfoCard/BrokerInfoCard";
 
 export default function Home() {
   return (
@@ -89,7 +93,10 @@ export default function Home() {
       </div> */}
 
       {/* Single Need Page Info Card */}
-      <NeedInfoCard />
+      {/* <NeedInfoCard /> */}
+
+      {/* Single Broker Page Info Card */}
+      <BrokerInfoCard />
     </main>
   );
 }

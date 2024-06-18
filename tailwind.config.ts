@@ -19,6 +19,7 @@ export const tailwindColors: { [key: string]: string } = {
   icon: "#9AACB6",
   tag: "#E1E7EA",
   "gray-4": "#CCCCCC",
+  "gray-8": "#525252",
 };
 
 const config: Config = {
