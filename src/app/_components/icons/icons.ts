@@ -1,5 +1,6 @@
 /* GENERATED FILE */
 
+export { default as IconAlertCircle } from './src/alert-circle';
 export { default as IconArrowLeftLong } from './src/arrow-left-long';
 export { default as IconArrowLeftOutlined } from './src/arrow-left-outlined';
 export { default as IconArrowLeft } from './src/arrow-left';
