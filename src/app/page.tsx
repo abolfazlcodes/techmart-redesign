@@ -155,13 +155,25 @@ export default function Home() {
           />
         </div>
 
-        <div className="flex items-center justify-center mt-5">
-          <div className="w-4 h-[34px] rounded-full border border-white relative before:absolute before:w-1 before:h-1 before:bg-white before:rounded-full before:left-1/2 before:top-1 before:-translate-x-1/2"></div>
-        </div>
+        {/* <div className="flex items-center justify-center">
+          <div className="w-4 h-9 top-4 md:top-11 z-20 rounded-full border border-white relative before:absolute before:w-1 before:h-1 before:bg-white before:rounded-full before:left-1/2 before:top-1 before:-translate-x-1/2"></div>
+        </div> */}
 
         {/* curved inverted style */}
-        <div className="absolute w-32 h-16 bg-primary rounded-b-full -translate-x-1/2 top-full left-1/2 after:absolute after:bg-red-500 after:w-4 after:h-4 after:top-0 after:-left-[14px] after:rounded-tr-full shadow-[6px 6px #28374C]"></div>
+        {/* <div className="absolute w-32 h-16 bg-primary rounded-b-full -translate-x-1/2 top-28 md:top-32 lg:top-44 left-1/2 after:absolute after:bg-transparent after:w-16 after:h-16 after:-bottom-[9.5px] after:-left-[45px] after:rounded-tr-full after:shadow-header-statistic after:-rotate-[23.5deg] before:w-16 before:h-16 before:-bottom-[11px] before:left-[110px] before:rounded-tl-full before:shadow-header-statistic-right before:bg-transparent before:absolute before:rotate-[25deg]"></div> */}
       </article>
+
+      {/* Footer box */}
+      <div className="mt-20">
+        <article className="bg-primary max-w-[1600px] mx-auto rounded-[64px] px-6 relative pt-2 pb-[10px] lg:px-8 lg:py-4">
+          <div className="flex items-center justify-between flex-col md:flex-row text-white gap-3">
+            <span className="text-caption2">
+              تمام حقوق مادی و معنوی این وبسایت متعلق به پارک فناوری پردیس است.
+            </span>
+            <span className="text-caption2">Copyright © techmart.ir</span>
+          </div>
+        </article>
+      </div>
     </main>
   );
 }
