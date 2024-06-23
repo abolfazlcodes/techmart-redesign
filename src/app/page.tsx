@@ -8,11 +8,14 @@ import {
   IconArrowLeft,
   IconArrowLeftLong,
   IconArrowLeftOutlined,
+  IconArrowUp,
+  IconArrowUpLong,
   IconBuilding,
   IconClock,
   IconHeart,
   IconLocation,
   IconMessage,
+  IconPeople,
   IconPhone,
   IconShare,
   IconStar,
@@ -32,6 +35,9 @@ import ProductInfoCard from "./_components/ProductInfoCard/ProductInfoCard";
 import QrCode from "./_components/QrCode/QrCode";
 import BrokerInfoCard from "./_components/BrokerInfoCard/BrokerInfoCard";
 import CompanyInfoCard from "./_components/CompanyInfoCard/CompanyInfoCard";
+import StatisticItem from "./_components/StatisticItem/StatisticItem";
+import FooterCopyRightBox from "./_components/FooterCopyrightBox/FooterCopyrightBox";
+import HeaderStatistics from "./_components/HeaderStatistics/HeaderStatistics";
 
 export default function Home() {
   return (
@@ -105,7 +111,12 @@ export default function Home() {
       {/* <BrokerInfoCard /> */}
 
       {/* Single Company Page Info Card */}
-      <CompanyInfoCard />
+      {/* <CompanyInfoCard /> */}
+
+      <HeaderStatistics />
+
+      {/* Footer box */}
+      <FooterCopyRightBox />
     </main>
   );
 }
