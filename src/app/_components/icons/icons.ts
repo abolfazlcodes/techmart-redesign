@@ -4,6 +4,7 @@ export { default as IconAlertCircle } from './src/alert-circle';
 export { default as IconArrowLeftLong } from './src/arrow-left-long';
 export { default as IconArrowLeftOutlined } from './src/arrow-left-outlined';
 export { default as IconArrowLeft } from './src/arrow-left';
+export { default as IconArrowUpLong } from './src/arrow-up-long';
 export { default as IconArrowUp } from './src/arrow-up';
 export { default as IconBuilding } from './src/building';
 export { default as IconClock } from './src/clock';

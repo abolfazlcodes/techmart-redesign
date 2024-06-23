@@ -55,6 +55,8 @@ const config: Config = {
         "2xl": " 0px 25px 50px -12px #00000040",
         "header-statistic": "8px -8px #28374C",
         "header-statistic-right": "-8px -8px #28374C",
+        "footer-shadow-box-left": "2px 8px #28374C",
+        "footer-shadow-box-right": "-7px 9px #28374C",
       },
       screens: {
         "3xl": "1710px",
