@@ -37,6 +37,7 @@ import BrokerInfoCard from "./_components/BrokerInfoCard/BrokerInfoCard";
 import CompanyInfoCard from "./_components/CompanyInfoCard/CompanyInfoCard";
 import StatisticItem from "./_components/StatisticItem/StatisticItem";
 import FooterCopyRightBox from "./_components/FooterCopyrightBox/FooterCopyrightBox";
+import HeaderStatistics from "./_components/HeaderStatistics/HeaderStatistics";
 
 export default function Home() {
   return (
@@ -112,59 +113,7 @@ export default function Home() {
       {/* Single Company Page Info Card */}
       {/* <CompanyInfoCard /> */}
 
-      <article className="bg-primary max-w-[1600px] mx-auto rounded-[64px] lg:pt-[38px] lg:pb-[43px] px-4 relative pt-2 pb-[20px] lg:px-[137px]">
-        <div className="flex items-center justify-between">
-          <StatisticItem
-            title="25000+"
-            subTitle="کارگزاری‌های فعال"
-            icon={
-              <IconPeople
-                viewBox="0 0 42 42"
-                className="w-[42px] h-[42px] fill-white stroke-none"
-              />
-            }
-          />
-          <StatisticItem
-            title="4000+"
-            subTitle="شرکت هایءء فعال"
-            icon={
-              <IconPeople
-                viewBox="0 0 42 42"
-                className="w-[42px] h-[42px] fill-white stroke-none"
-              />
-            }
-          />
-          <StatisticItem
-            title="16000+"
-            subTitle="محصولات فن بازار"
-            icon={
-              <IconPeople
-                viewBox="0 0 42 42"
-                className="w-[42px] h-[42px] fill-white stroke-none"
-              />
-            }
-            className="hidden md:flex"
-          />
-          <StatisticItem
-            title="670+"
-            subTitle="تعداد نیاز‌ها"
-            icon={
-              <IconPeople
-                viewBox="0 0 42 42"
-                className="w-[42px] h-[42px] fill-white stroke-none"
-              />
-            }
-            className="hidden lg:flex"
-          />
-        </div>
-
-        {/* <div className="flex items-center justify-center">
-          <div className="w-4 h-9 top-4 md:top-11 z-20 rounded-full border border-white relative before:absolute before:w-1 before:h-1 before:bg-white before:rounded-full before:left-1/2 before:top-1 before:-translate-x-1/2"></div>
-        </div> */}
-
-        {/* curved inverted style */}
-        {/* <div className="absolute w-32 h-16 bg-primary rounded-b-full -translate-x-1/2 top-28 md:top-32 lg:top-44 left-1/2 after:absolute after:bg-transparent after:w-16 after:h-16 after:-bottom-[9.5px] after:-left-[45px] after:rounded-tr-full after:shadow-header-statistic after:-rotate-[23.5deg] before:w-16 before:h-16 before:-bottom-[11px] before:left-[110px] before:rounded-tl-full before:shadow-header-statistic-right before:bg-transparent before:absolute before:rotate-[25deg]"></div> */}
-      </article>
+      <HeaderStatistics />
 
       {/* Footer box */}
       <FooterCopyRightBox />
