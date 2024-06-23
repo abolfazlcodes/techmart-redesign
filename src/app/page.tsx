@@ -38,6 +38,8 @@ import CompanyInfoCard from "./_components/CompanyInfoCard/CompanyInfoCard";
 import StatisticItem from "./_components/StatisticItem/StatisticItem";
 import FooterCopyRightBox from "./_components/FooterCopyrightBox/FooterCopyrightBox";
 import HeaderStatistics from "./_components/HeaderStatistics/HeaderStatistics";
+import Map from "./_components/map/map";
+import MapContainer from "./_components/MapContainer/MapContainer";
 
 export default function Home() {
   return (
@@ -113,10 +115,15 @@ export default function Home() {
       {/* Single Company Page Info Card */}
       {/* <CompanyInfoCard /> */}
 
-      <HeaderStatistics />
+      {/* <HeaderStatistics /> */}
 
       {/* Footer box */}
-      <FooterCopyRightBox />
+      {/* <FooterCopyRightBox /> */}
+
+      {/* Map */}
+      <div className="max-w-[632px] w-full h-[336px] rounded-50 overflow-hidden">
+        <MapContainer />
+      </div>
     </main>
   );
 }
