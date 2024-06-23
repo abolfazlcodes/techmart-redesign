@@ -13,6 +13,7 @@ export { default as IconIconShop } from './src/icon-shop';
 export { default as IconLike } from './src/like';
 export { default as IconLocation } from './src/location';
 export { default as IconMessage } from './src/message';
+export { default as IconPeople } from './src/people';
 export { default as IconPhone } from './src/phone';
 export { default as IconSearchFill } from './src/search-fill';
 export { default as IconShare } from './src/share';
