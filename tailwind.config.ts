@@ -21,6 +21,8 @@ export const tailwindColors: { [key: string]: string } = {
   "gray-3": "#E5E5E5",
   "gray-4": "#CCCCCC",
   "gray-8": "#525252",
+  green: "#DEF7EC",
+  "green-text": "#057A55",
 };
 
 const config: Config = {
